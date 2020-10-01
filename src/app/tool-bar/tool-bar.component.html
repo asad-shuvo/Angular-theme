@@ -1,0 +1,28 @@
+<div [class]="theme" class="basic-class">
+  <div fxLayout="row">
+    <mat-toolbar color="primary">
+      <div fxFlex="50%">
+        <span>My App</span>
+      </div>
+      <div fxFlex="50%" fxLayout="row" fxLayoutAlign="center center">
+        <div class="mt-30">
+          <mat-form-field appearance="outline" class="select-theme">
+            <mat-label>Select Theme</mat-label>
+            <mat-select (selectionChange)="changeTheme($event)" [(value)]="theme">
+              <mat-option color="primary" value="light-theme"
+                >Light Theme</mat-option
+              >
+              <mat-option color="primary" value="dark-theme"
+                >Dark Theme</mat-option
+              >
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-toolbar>
+  </div>
+</div>
+
+<app-section1 [theme]="theme"></app-section1>
+
+<app-section2 [theme]="theme"></app-section2>
