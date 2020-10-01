@@ -4,6 +4,7 @@
 @import "./app/tool-bar/tool-bar.component.theme.scss";
 @import "./app/section1/section1.component.theme.scss";
 @import "./app/section2/section2.component.theme.scss";
+@import "./app/section3/section3.component.theme.scss";
 
 $primary-light: mat-palette($mat-indigo);
 $accent-light: mat-palette($mat-pink);
@@ -21,6 +22,7 @@ $dark-theme: mat-dark-theme($primary-dark, $accent-dark, $warn-dark);
   @include app-tool-bar($theme);
   @include app-section1($theme);
   @include app-section2($theme);
+  @include app-section3($theme);
 }
 
 .light-theme {
